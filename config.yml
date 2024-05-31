@@ -1,5 +1,5 @@
 enableRobotsTXT: true
-baseURL : "https://orioninsist.org/"
+baseURL : "https://orioninsist.dev/"
 languageCode : en-us
 title : "orioninsist"
 pageinate: 6
@@ -12,7 +12,7 @@ pygmentsUseClasses: true
 minify:
     disableXML: true
     # minifyOutput: true
-googleAnalytics: G-6CE6YFM36C
+googleAnalytics: G-N4659BR2H4
 
 languages:
     en:
