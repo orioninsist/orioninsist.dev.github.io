@@ -31,7 +31,7 @@ sudo pacman curl git fastfetch rclone htop kitty zsh neovim vim emacs firefox do
 * vim: A powerful and customizable text editor.
 * emacs: A text processing environment that is a customizable text editor, email client, and more.
 * firefox: A popular web browser.
-* docker: 
+* docker: Pack, ship and run any application as a lightweight container	
 ```
 
 ## Installing Packages with YAY AUR on Arch Linux
