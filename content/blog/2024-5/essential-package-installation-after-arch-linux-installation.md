@@ -14,7 +14,7 @@ cover = { image = "", alt = "" }
 
 ## Installing Packages with Pacman on Arch Linux
 ``` shell
-sudo pacman curl git fastfetch rclone htop kitty zsh neovim vim emacs firefox 
+sudo pacman curl git fastfetch rclone htop kitty zsh neovim vim emacs firefox docker
 ```
 
 ## This command installs the following pacman packages on Arch Linux:
@@ -31,6 +31,7 @@ sudo pacman curl git fastfetch rclone htop kitty zsh neovim vim emacs firefox
 * vim: A powerful and customizable text editor.
 * emacs: A text processing environment that is a customizable text editor, email client, and more.
 * firefox: A popular web browser.
+* docker: 
 ```
 
 ## Installing Packages with YAY AUR on Arch Linux
@@ -61,9 +62,46 @@ yay -Yc	## Clean unneeded dependencies.
 
 ## Installing Packages with YAY AUR on Arch Linux
 ```shell
-yay -S brave-bin 
+yay -S brave-bin lux-dl
 ```
 ## This command installs the following YAY AUR packages on Arch Linux:
 ```markdown
 * brave-bin: Web browser that blocks ads and trackers by default (binary release)	
+* lux-dl: Fast and simple video download library and CLI tool written in Go
+```
+
+## Installing spacemacs on Arch Linux
+```shell
+git clone https://github.com/syl20bnr/spacemacs $HOME/.emacs.d
+```
+
+## Installing doomemacs on Arch Linux
+```shell
+git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.config/emacs
+~/.config/emacs/bin/doom install
+```
+
+## Installing oh-my-zsh on Arch Linux
+```shell
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+## Installing ollama on Arch Linux
+```shell
+curl -fsSL https://ollama.com/install.sh | sh
+sudo systemctl enable --now ollama
+ollama run llama3 ## then run command 
+```
+
+## Installing open-webui on Arch Linux
+```shell
+docker run -d -p 3000:8080 -v ollama:/root/.ollama -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:ollama
+
+```
+## Installing docker on Arch Linux
+```shell
+sudo pacman -S docker
+sudo systemctl status docker
+sudo systemctl start docker
+sudo systemctl enable docker
 ```
