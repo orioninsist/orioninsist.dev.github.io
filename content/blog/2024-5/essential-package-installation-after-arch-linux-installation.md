@@ -13,11 +13,11 @@ cover = { image = "", alt = "" }
 
 
 ## Installing Packages with Pacman on Arch Linux
-``` markdown
+``` shell
 sudo pacman curl git fastfetch rclone htop kitty zsh neovim vim emacs firefox 
 ```
 
-## This command installs the following packages on Arch Linux:
+## This command installs the following pacman packages on Arch Linux:
 
 ```markdown
 * curl: A command-line tool for transferring data by following URLs.
@@ -33,5 +33,37 @@ sudo pacman curl git fastfetch rclone htop kitty zsh neovim vim emacs firefox
 * firefox: A popular web browser.
 ```
 
+## Installing Packages with YAY AUR on Arch Linux
+```shell
+## Yet Another Yogurt - An AUR Helper Written in Go
+pacman -Sy --needed git base-devel
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+```
+## YAY Command List
+```shell
+yay	## Alias to yay -Syu.
+yay <Search Term> ## Present package-installation selection menu.
+yay -Bi <dir>	## Install dependencies and build a local PKGBUILD.
+yay -G <AUR Package>	## Download PKGBUILD from ABS or AUR. (yay v12.0+)
+yay -Gp <AUR Package>	## Print to stdout PKGBUILD from ABS or AUR.
+yay -Ps	## Print system statistics.
+yay -Syu --devel	## Perform system upgrade, but also check for development package updates.
+yay -Syu --timeupdate	## Perform system upgrade and use PKGBUILD modification time (not version number) to determine update.
+yay -Wu <AUR Package>	## Unvote for package (Requires setting AUR_USERNAME and AUR_PASSWORD environment variables) (yay v11.3+)
+yay -Wv <AUR Package>	## Vote for package (Requires setting AUR_USERNAME and AUR_PASSWORD environment variables). (yay v11.3+)
+yay -Y --combinedupgrade --save	## Make combined upgrade the default mode.
+yay -Y --gendb	## Generate development package database used for devel update.
+yay -Yc	## Clean unneeded dependencies.
+	
+```
 
-
+## Installing Packages with YAY AUR on Arch Linux
+```shell
+yay -S brave-bin 
+```
+## This command installs the following YAY AUR packages on Arch Linux:
+```markdown
+* brave-bin: Web browser that blocks ads and trackers by default (binary release)	
+```
