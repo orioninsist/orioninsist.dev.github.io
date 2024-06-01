@@ -72,38 +72,6 @@ yay -S brave-bin lux-dl
 * lux-dl: Fast and simple video download library and CLI tool written in Go
 ```
 
-## Installing spacemacs on Arch Linux
-```shell
-git clone https://github.com/syl20bnr/spacemacs $HOME/.emacs.d
-```
 
-## Installing doomemacs on Arch Linux
-```shell
-git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.config/emacs
-~/.config/emacs/bin/doom install
-```
 
-## Installing oh-my-zsh on Arch Linux
-```shell
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
 
-## Installing ollama on Arch Linux
-```shell
-curl -fsSL https://ollama.com/install.sh | sh
-sudo systemctl enable --now ollama
-ollama run llama3 ## then run command 
-```
-
-## Installing open-webui on Arch Linux
-```shell
-docker run -d -p 3000:8080 -v ollama:/root/.ollama -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:ollama
-
-```
-## Installing docker on Arch Linux
-```shell
-sudo pacman -S docker
-sudo systemctl status docker
-sudo systemctl start docker
-sudo systemctl enable docker
-```
