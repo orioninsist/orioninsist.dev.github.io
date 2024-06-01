@@ -14,7 +14,7 @@ cover = { image = "", alt = "" }
 
 ## Installing Packages with Pacman on Arch Linux
 ``` shell
-sudo pacman curl git fastfetch rclone htop kitty zsh neovim vim emacs firefox docker
+sudo pacman curl git fastfetch rclone htop kitty zsh neovim vim emacs firefox docker screen tmux
 ```
 
 ## This command installs the following pacman packages on Arch Linux:
@@ -32,6 +32,8 @@ sudo pacman curl git fastfetch rclone htop kitty zsh neovim vim emacs firefox do
 * emacs: A text processing environment that is a customizable text editor, email client, and more.
 * firefox: A popular web browser.
 * docker: Pack, ship and run any application as a lightweight container	
+* tmux: Terminal multiplexer	
+* screen: Full-screen window manager that multiplexes a physical terminal	
 ```
 
 ## Installing Packages with YAY AUR on Arch Linux
